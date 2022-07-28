@@ -13,5 +13,6 @@ titleHeader = doc.find("title")
 title = titleHeader.text
 #title = titleHeader.string
 
-print(doc.prettify())
-#print(title)
+#print(doc.prettify())
+
+print(title)
