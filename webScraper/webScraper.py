@@ -1,7 +1,10 @@
 import requests 
 from bs4 import BeautifulSoup
 
-url = "https://www.geeksforgeeks.org/"
+url = input("Insert website link: ")
+
+#Example
+#url = "https://www.geeksforgeeks.org/"
 #url = "https://www.facebook.com/"
 
 html = requests.get(url)
@@ -13,6 +16,5 @@ titleHeader = doc.find("title")
 title = titleHeader.text
 #title = titleHeader.string
 
-#print(doc.prettify())
-
 print(title)
+#print(doc.prettify())
